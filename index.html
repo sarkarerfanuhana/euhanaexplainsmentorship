@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Euhana Explains | Personalised Mentorship Program (JEE • NEET • IAT)</title>
+  <meta name="description" content="Official Personalised Mentorship Program by Sarkar Erfan Uhana (IISER Kolkata). Overcome distractions, build unstoppable consistency, and crack JEE, NEET, and IAT with daily 1-on-1 tracking." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-avatar">EE</span>
+        <div class="brand-text">
+          <span class="brand-title">Euhana Explains <i data-lucide="badge-check" class="verified-icon"></i></span>
+          <span class="brand-sub">Personalised Mentorship</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#problem-solution">Accountability</a>
+        <a href="#features">Features</a>
+        <a href="#plans">Plans & Pricing</a>
+        <a href="#about">About Mentor</a>
+        <a href="#faq">FAQs</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#plans" class="btn btn-primary btn-sm">Enroll Now</a>
+      </div>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+        <i data-lucide="menu" id="navIconOpen"></i>
+        <i data-lucide="x" id="navIconClose" class="hidden"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#problem-solution" class="mobile-link">Accountability</a>
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#plans" class="mobile-link">Plans & Pricing</a>
+      <a href="#about" class="mobile-link">About Mentor</a>
+      <a href="#faq" class="mobile-link">FAQs</a>
+      <a href="#plans" class="btn btn-primary w-full">Enroll Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-pill"><i data-lucide="sparkles" class="icon-xs"></i> 2026 Batch Admissions Open</span>
+        <span class="badge-separator">•</span>
+        <span class="badge-text">IISER Kolkata • 144k+ Community</span>
+      </div>
+
+      <h1 class="hero-title">
+        Kill Distraction. Master Consistency.<br />
+        <span class="gradient-text">Crack JEE, NEET & IAT</span> with True 1-on-1 Guidance.
+      </h1>
+
+      <p class="hero-subtitle">
+        Lectures and notes are everywhere. What you actually lack is <strong>daily accountability</strong> and a <strong>custom roadmap</strong> that keeps you from falling behind. Get guided directly by Sarkar Erfan Uhana.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#plans" class="btn btn-primary btn-lg">
+          <span>Choose Your Plan</span>
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+        <a href="#problem-solution" class="btn btn-secondary btn-lg">
+          <i data-lucide="shield-alert" class="icon-sm text-amber"></i>
+          <span>How We Fix Distraction</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="hero-trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box"><i data-lucide="users"></i></div>
+          <div>
+            <div class="trust-number">144K+</div>
+            <div class="trust-label">Instagram Community</div>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box"><i data-lucide="graduation-cap"></i></div>
+          <div>
+            <div class="trust-number">IISER Kolkata</div>
+            <div class="trust-label">Mentor: Sarkar Erfan Uhana</div>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box"><i data-lucide="calendar-check"></i></div>
+          <div>
+            <div class="trust-number">100% Daily</div>
+            <div class="trust-label">Compulsory Progress Audit</div>
+          </div>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box"><i data-lucide="target"></i></div>
+          <div>
+            <div class="trust-number">Custom DPPs</div>
+            <div class="trust-label">Weakness-Focused Practice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problem & Solution: Distraction & Consistency -->
+  <section class="section problem-solution-section" id="problem-solution">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="alert-circle" class="icon-xs"></i> The Core Problem Identified
+        </div>
+        <h2 class="section-title">Why 90% of Aspirants Fall Behind</h2>
+        <p class="section-desc">
+          In our recent Instagram survey of thousands of JEE, NEET & IAT aspirants, two critical issues stood above everything else:
+        </p>
+      </div>
+
+      <div class="poll-insights-grid">
+        <!-- Issue 1: Distraction -->
+        <div class="insight-card red-border">
+          <div class="insight-badge-pill red"><i data-lucide="smartphone"></i> Poll Finding #1</div>
+          <h3 class="insight-title">Uncontrolled Distraction</h3>
+          <p class="insight-desc">
+            Endless scrolling, random YouTube advice, and jumping between materials without finishing a single chapter properly.
+          </p>
+          <div class="solution-bridge">
+            <span class="bridge-tag"><i data-lucide="check-circle-2"></i> Our Solution:</span>
+            <p><strong>Strict Daily Target Enforcement.</strong> You study only what is on your daily planner with zero room for guessing.</p>
+          </div>
+        </div>
+
+        <!-- Issue 2: Inconsistency -->
+        <div class="insight-card amber-border">
+          <div class="insight-badge-pill amber"><i data-lucide="trending-down"></i> Poll Finding #2</div>
+          <h3 class="insight-title">Lack of Daily Consistency</h3>
+          <p class="insight-desc">
+            Studying 12 hours for 2 days, then burning out and wasting the next 5 days. Nobody checks whether you actually completed your daily task.
+          </p>
+          <div class="solution-bridge">
+            <span class="bridge-tag"><i data-lucide="check-circle-2"></i> Our Solution:</span>
+            <p><strong>Compulsory Daily Progress Reporting.</strong> You must submit your daily output every evening. Every hour counts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How the Zero Distraction Tracking Works -->
+      <div class="accountability-flow-box">
+        <div class="flow-header">
+          <div class="flow-icon"><i data-lucide="shield-check"></i></div>
+          <div>
+            <h3 class="flow-title">The Zero-Distraction Accountability Engine</h3>
+            <p class="flow-subtitle">How we keep you relentlessly consistent throughout the month</p>
+          </div>
+        </div>
+
+        <div class="flow-steps-grid">
+          <div class="flow-step">
+            <div class="step-badge">Step 1</div>
+            <h4>Personalised Daily Roadmap</h4>
+            <p>You receive your exact topic targets and hand-picked DPP problems for the day—no confusion on what to open.</p>
+          </div>
+
+          <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+
+          <div class="flow-step">
+            <div class="step-badge">Step 2</div>
+            <h4>Compulsory Night Log</h4>
+            <p>It is mandatory to report your completed topics, questions solved, and study hours before going to sleep.</p>
+          </div>
+
+          <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+
+          <div class="flow-step">
+            <div class="step-badge">Step 3</div>
+            <h4>Audit & Real-Time Pivot</h4>
+            <p>We review your consistency log. In Gold & Diamond plans, we call you directly to fix slumps and update strategy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="layers" class="icon-xs"></i> Built For Results
+        </div>
+        <h2 class="section-title">What Every Mentored Student Receives</h2>
+        <p class="section-desc">
+          Everything designed to save your time, clarify doubts, and maximize your test scores.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon bg-blue"><i data-lucide="calendar"></i></div>
+          <h3 class="feature-title">Personalised Study Planner</h3>
+          <p class="feature-desc">
+            Custom study planner tailored specifically to your target exam (JEE / NEET / IAT), covering daily, weekly, and monthly milestones.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon bg-indigo"><i data-lucide="clock"></i></div>
+          <h3 class="feature-title">Personalised Time Table</h3>
+          <p class="feature-desc">
+            An actionable, realistic timetable crafted around your coaching or school hours to eliminate wasted time and burnout.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon bg-emerald"><i data-lucide="file-check"></i></div>
+          <h3 class="feature-title">Personalised DPPs (Daily Practice)</h3>
+          <p class="feature-desc">
+            Hand-picked problem sets tailored to your specific weak chapters, ensuring you don't waste time on irrelevant questions.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon bg-purple"><i data-lucide="award"></i></div>
+          <h3 class="feature-title">Exam-Level Weekly Tests</h3>
+          <p class="feature-desc">
+            Regular exam-style weekly mock tests to benchmark your actual retention and pinpoint conceptual loopholes early.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon bg-cyan"><i data-lucide="book-open"></i></div>
+          <h3 class="feature-title">Curated Chapter-Wise Notes</h3>
+          <p class="feature-desc">
+            High-yield, concise notes precisely aligned with your planner for rapid chapter mastery and efficient revision.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card highlighted-feature">
+          <div class="feature-icon bg-amber"><i data-lucide="check-check"></i></div>
+          <h3 class="feature-title">Compulsory Daily Progress Tracking</h3>
+          <p class="feature-desc">
+            Mandatory daily progress reporting system that eliminates procrastination and builds indestructible study habits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans & Interactive Pricing Section -->
+  <section class="section plans-section" id="plans">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="credit-card" class="icon-xs"></i> Transparent Pricing
+        </div>
+        <h2 class="section-title">Select Your Mentorship Plan</h2>
+        <p class="section-desc">
+          Choose the level of guidance and subjects you need. All plans include full personalized planning and daily tracking.
+        </p>
+      </div>
+
+      <!-- Plans Grid -->
+      <div class="plans-grid">
+
+        <!-- PLAN 1: SILVER (Interactive Subject Builder) -->
+        <div class="plan-card silver-plan" id="planSilverCard">
+          <div class="plan-header">
+            <div class="plan-tier-badge silver">Silver Plan</div>
+            <h3 class="plan-name">Subject-Wise Mentorship</h3>
+            <p class="plan-desc">Comprehensive resources, planners, notes, DPPs, and daily accountability for your selected subjects.</p>
+          </div>
+
+          <!-- Interactive Subject Chooser -->
+          <div class="subject-selector-box">
+            <label class="subject-box-label">Select Subjects (Physics, Chemistry, Biology):</label>
+            <div class="subject-checkboxes">
+              <label class="subject-pill" id="pillPhysics">
+                <input type="checkbox" name="subject" value="Physics" checked id="chkPhysics" />
+                <span class="pill-check"><i data-lucide="check" class="icon-xxs"></i></span>
+                <span class="pill-title">Physics</span>
+                <span class="pill-mentor-sub">Erfan Uhana</span>
+                <span class="pill-price">₹99</span>
+              </label>
+
+              <label class="subject-pill" id="pillChemistry">
+                <input type="checkbox" name="subject" value="Chemistry" checked id="chkChemistry" />
+                <span class="pill-check"><i data-lucide="check" class="icon-xxs"></i></span>
+                <span class="pill-title">Chemistry</span>
+                <span class="pill-mentor-sub">Erfan Uhana</span>
+                <span class="pill-price">₹99</span>
+              </label>
+
+              <label class="subject-pill" id="pillBiology">
+                <input type="checkbox" name="subject" value="Biology" checked id="chkBiology" />
+                <span class="pill-check"><i data-lucide="check" class="icon-xxs"></i></span>
+                <span class="pill-title">Biology</span>
+                <span class="pill-mentor-sub text-emerald">Subarna Sultana</span>
+                <span class="pill-price">₹99</span>
+              </label>
+            </div>
+
+            <!-- Dynamic Pricing Display for Silver -->
+            <div class="dynamic-price-banner">
+              <div class="price-calc-left">
+                <span class="price-discount-tag" id="silverDiscountTag">All 3 Subjects Combo Deal</span>
+                <div class="price-row">
+                  <span class="old-price" id="silverOldPrice">₹399</span>
+                  <span class="current-price" id="silverPrice">₹249</span>
+                  <span class="price-period">/ month</span>
+                </div>
+              </div>
+              <div class="price-summary-text" id="silverSummaryText">
+                Physics + Chemistry + Biology
+              </div>
+            </div>
+          </div>
+
+          <!-- Silver Features List -->
+          <div class="plan-features-list">
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>Personalised Study Planner</strong> for selected subjects</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>Personalised Time Table</strong> customized to your routine</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>Personalised Daily DPPs</strong> targeting weak areas</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>Weekly Exam-Style Tests</strong> & Performance Analysis</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>High-Yield Chapter-Wise Notes</strong> for rapid revision</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span><strong>Compulsory Daily Progress Tracking</strong> to beat distraction</span>
+            </div>
+          </div>
+
+          <div class="plan-footer">
+            <button class="btn btn-primary w-full" id="enrollSilverBtn" onclick="openEnrollmentModal('Silver')">
+              <span>Enroll in Silver Plan</span>
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+            </button>
+            <p class="plan-subnote">Instant access to materials upon verification</p>
+          </div>
+        </div>
+
+        <!-- PLAN 2: GOLD PLAN (Bi-Weekly Meets + Parent Reports) -->
+        <div class="plan-card gold-plan popular-card" id="planGoldCard">
+          <div class="popular-ribbon"><i data-lucide="flame" class="icon-xs"></i> MOST POPULAR</div>
+          
+          <div class="plan-header">
+            <div class="plan-tier-badge gold">Gold Plan</div>
+            <h3 class="plan-name">Mentorship & Parent Connect</h3>
+            <p class="plan-desc">Live mentorship sessions, weekly individual calls, and direct weekly progress reporting to parents.</p>
+          </div>
+
+          <!-- Gold Pricing -->
+          <div class="static-price-box">
+            <span class="price-discount-tag gold-tag">All Subjects Included (Phy + Chem + Bio)</span>
+            <div class="price-row">
+              <span class="old-price">₹699</span>
+              <span class="current-price text-gold">₹499</span>
+              <span class="price-period">/ month</span>
+            </div>
+          </div>
+
+          <!-- Gold Features List -->
+          <div class="plan-features-list">
+            <div class="feature-item highlight-item">
+              <i data-lucide="check-circle-2" class="feature-check-gold"></i>
+              <span><strong>Includes ALL Silver Plan features</strong> for all subjects</span>
+            </div>
+            <div class="feature-item highlight-item">
+              <i data-lucide="video" class="feature-check-gold"></i>
+              <span><strong>Google Meet 2 Times a Week</strong> (Group mentoring, strategy & motivation)</span>
+            </div>
+            <div class="feature-item highlight-item">
+              <i data-lucide="phone-call" class="feature-check-gold"></i>
+              <span><strong>1 Individual 1-on-1 Call per Week</strong> for direct personal feedback</span>
+            </div>
+            <div class="feature-item highlight-item">
+              <i data-lucide="user-check" class="feature-check-gold"></i>
+              <span><strong>Weekly Progress Report to Parents</strong> for total transparency & support</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span>Custom DPPs, Weekly Mock Tests & Notes</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span>Mandatory Daily Progress Logging</span>
+            </div>
+          </div>
+
+          <div class="plan-footer">
+            <button class="btn btn-gold w-full" id="enrollGoldBtn" onclick="openEnrollmentModal('Gold')">
+              <span>Enroll in Gold Plan</span>
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+            </button>
+            <p class="plan-subnote">Limited batch size for individual attention</p>
+          </div>
+        </div>
+
+        <!-- PLAN 3: DIAMOND PLAN (Daily 1-on-1 Call & Adaptive Strategy) -->
+        <div class="plan-card diamond-plan" id="planDiamondCard">
+          <div class="plan-header">
+            <div class="plan-tier-badge diamond">Diamond Plan</div>
+            <h3 class="plan-name">Daily 1-on-1 Personal Mentorship</h3>
+            <p class="plan-desc">For students who want zero excuses: daily personal calls with Erfan, daily tracking audits, and dynamic strategy pivots.</p>
+          </div>
+
+          <!-- Diamond Pricing -->
+          <div class="static-price-box">
+            <span class="price-discount-tag diamond-tag">Exclusive 1-on-1 Guidance</span>
+            <div class="price-row">
+              <span class="old-price">₹1,299</span>
+              <span class="current-price text-diamond">₹999</span>
+              <span class="price-period">/ month</span>
+            </div>
+          </div>
+
+          <!-- Diamond Features List -->
+          <div class="plan-features-list">
+            <div class="feature-item highlight-item-diamond">
+              <i data-lucide="sparkles" class="feature-check-diamond"></i>
+              <span><strong>Includes ALL Silver & Gold features</strong></span>
+            </div>
+            <div class="feature-item highlight-item-diamond">
+              <i data-lucide="phone-incoming" class="feature-check-diamond"></i>
+              <span><strong>Daily 1-on-1 Personal Call:</strong> 5–10 min everyday check-in call to inspect your progress</span>
+            </div>
+            <div class="feature-item highlight-item-diamond">
+              <i data-lucide="clipboard-list" class="feature-check-diamond"></i>
+              <span><strong>Daily Study Audit:</strong> What you studied vs what you missed is noted daily</span>
+            </div>
+            <div class="feature-item highlight-item-diamond">
+              <i data-lucide="refresh-cw" class="feature-check-diamond"></i>
+              <span><strong>Weekly Strategy Optimization:</strong> Instant pivot every week based on audit data</span>
+            </div>
+            <div class="feature-item highlight-item-diamond">
+              <i data-lucide="message-circle" class="feature-check-diamond"></i>
+              <span><strong>Priority WhatsApp Access:</strong> Direct messaging channel with mentor</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="check" class="feature-check"></i>
+              <span>Bi-weekly Google Meets & Weekly Parent Reports</span>
+            </div>
+          </div>
+
+          <div class="plan-footer">
+            <button class="btn btn-diamond w-full" id="enrollDiamondBtn" onclick="openEnrollmentModal('Diamond')">
+              <span>Enroll in Diamond Plan</span>
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+            </button>
+            <p class="plan-subnote">Strictly limited slots due to daily personal calling</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Plan Comparison Table -->
+      <div class="comparison-container">
+        <h3 class="comparison-title text-center">Compare Plan Features</h3>
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Silver Plan</th>
+                <th>Gold Plan</th>
+                <th>Diamond Plan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Subjects Included</td>
+                <td>Custom (Phy / Chem / Bio)</td>
+                <td>All Subjects</td>
+                <td>All Subjects</td>
+              </tr>
+              <tr>
+                <td>Personalised Planner & Timetable</td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+              </tr>
+              <tr>
+                <td>Personalised Daily DPPs & Notes</td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+              </tr>
+              <tr>
+                <td>Compulsory Daily Progress Tracking</td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+                <td><i data-lucide="check" class="text-emerald"></i></td>
+              </tr>
+              <tr>
+                <td>Google Meet Group Mentoring</td>
+                <td><i data-lucide="minus" class="text-muted"></i></td>
+                <td><strong>2x a week</strong></td>
+                <td><strong>2x a week</strong></td>
+              </tr>
+              <tr>
+                <td>1-on-1 Individual Calls</td>
+                <td><i data-lucide="minus" class="text-muted"></i></td>
+                <td>1x a week</td>
+                <td><strong class="text-diamond">Daily Personal Call</strong></td>
+              </tr>
+              <tr>
+                <td>Weekly Report to Parents</td>
+                <td><i data-lucide="minus" class="text-muted"></i></td>
+                <td><i data-lucide="check" class="text-gold"></i></td>
+                <td><i data-lucide="check" class="text-diamond"></i></td>
+              </tr>
+              <tr>
+                <td>Daily Study Audit & Weekly Strategy Pivot</td>
+                <td><i data-lucide="minus" class="text-muted"></i></td>
+                <td><i data-lucide="minus" class="text-muted"></i></td>
+                <td><i data-lucide="check" class="text-diamond"></i></td>
+              </tr>
+              <tr>
+                <td>Pricing (Monthly)</td>
+                <td><strong>₹99 – ₹249</strong></td>
+                <td><strong>₹499</strong></td>
+                <td><strong>₹999</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About The Mentors Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag"><i data-lucide="award" class="icon-xs"></i> Expert Academic Mentorship</div>
+        <h2 class="section-title">Meet Your Mentors</h2>
+        <p class="section-desc">Learn directly from IISER Kolkata mentors who mastered JEE, NEET, and IAT.</p>
+      </div>
+
+      <div class="mentors-grid">
+        <!-- Mentor 1: Sarkar Erfan Uhana -->
+        <div class="mentor-card">
+          <div class="mentor-card-header">
+            <div class="about-avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <div class="mentor-avatar-box">
+                <span class="mentor-initials">SEU</span>
+                <div class="mentor-live-badge"><i data-lucide="check" class="icon-xxs"></i> Lead Mentor</div>
+              </div>
+            </div>
+            <div class="mentor-meta">
+              <span class="mentor-subject-badge badge-physics-chem">Physics & Chemistry • Head Mentor</span>
+              <h3 class="mentor-name">Sarkar Erfan Uhana</h3>
+              <p class="mentor-role">IISER Kolkata (23MS) • Founder, Euhana Explains</p>
+              <div class="mentor-social-tags-inline">
+                <a href="https://instagram.com/erfan_iiserk" target="_blank" rel="noopener" class="social-tag-sm">
+                  <i data-lucide="instagram" class="icon-xs"></i> @erfan_iiserk (144K+)
+                </a>
+                <a href="https://youtube.com/@euhanaexplains" target="_blank" rel="noopener" class="social-tag-sm">
+                  <i data-lucide="youtube" class="icon-xs"></i> YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-card-body">
+            <p class="mentor-quote">
+              "Most students preparing for JEE, NEET, or IAT don't lack talent or intelligence—they lack a clear, daily system that holds them accountable. We provide what coaching batches never do: <strong>individual attention, custom DPPs, and relentless daily progress monitoring</strong>."
+            </p>
+            <div class="mentor-stats-grid">
+              <div class="stat-pill"><i data-lucide="check-circle" class="icon-xs text-emerald"></i> 144k+ Student Community</div>
+              <div class="stat-pill"><i data-lucide="check-circle" class="icon-xs text-emerald"></i> IISER Kolkata (23MS)</div>
+              <div class="stat-pill"><i data-lucide="check-circle" class="icon-xs text-emerald"></i> JEE • NEET • IAT Specialist</div>
+              <div class="stat-pill"><i data-lucide="check-circle" class="icon-xs text-emerald"></i> Physics & Chemistry Strategist</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentor 2: Subarna Sultana -->
+        <div class="mentor-card">
+          <div class="mentor-card-header">
+            <div class="about-avatar-wrapper">
+              <div class="avatar-ring avatar-ring-emerald"></div>
+              <div class="mentor-avatar-box mentor-avatar-emerald">
+                <span class="mentor-initials text-emerald-gradient">SS</span>
+                <div class="mentor-live-badge badge-bio"><i data-lucide="check" class="icon-xxs"></i> Biology Mentor</div>
+              </div>
+            </div>
+            <div class="mentor-meta">
+              <span class="mentor-subject-badge badge-bio-pill">Biology Specialist • IISER Kolkata</span>
+              <h3 class="mentor-name">Subarna Sultana</h3>
+              <p class="mentor-role">IISER Kolkata (25MS) • Biology Specialist</p>
+              <div class="mentor-social-tags-inline">
+                <a href="https://instagram.com/sultana_iiserk" target="_blank" rel="noopener" class="social-tag-sm">
+                  <i data-lucide="instagram" class="icon-xs"></i> @sultana_iiserk
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-card-body">
+            <p class="mentor-quote">
+              "Mastering Biology requires precision, NCERT line-by-line clarity, and targeted question practice. I guide you step-by-step to eliminate rote learning and achieve top percentile accuracy in NEET, IAT, and board exams."
+            </p>
+            <div class="mentor-achievements-list">
+              <div class="achievement-item">
+                <div class="achievement-icon"><i data-lucide="award" class="icon-xs text-emerald"></i></div>
+                <div><strong>AIR-3433</strong> in IISER Aptitude Test (IAT 2025) & <strong>AIR-2665</strong> in AIIMS Nursing (2025)</div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-icon"><i data-lucide="award" class="icon-xs text-emerald"></i></div>
+                <div><strong>97.66 Percentile (501 Marks)</strong> in NEET (2025)</div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-icon"><i data-lucide="award" class="icon-xs text-emerald"></i></div>
+                <div><strong>State Rank 7</strong> in JENPAS UG (2024) & <strong>State Rank 10</strong> in 10th Board Exam</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag"><i data-lucide="help-circle" class="icon-xs"></i> Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about the mentorship workflow and enrollment.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does the compulsory daily progress tracking work?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Every student receives a daily target checklist. At the end of every day, you are required to submit what chapters, topics, and DPP problems you solved. In the Gold and Diamond plans, this progress is actively audited and discussed during our calls to keep you strictly on track.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is the difference between Gold and Diamond plans?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>In the <strong>Gold Plan</strong>, you get bi-weekly Google Meets (2x/week), 1 individual call per week, and weekly reports sent to your parents. In the <strong>Diamond Plan</strong>, you receive a <strong>daily 1-on-1 personal call</strong> with Erfan every single day, daily study tracking logs, dynamic weekly strategy pivots, and priority WhatsApp access.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I choose specific subjects in the Silver Plan?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! You can choose any single subject (Physics, Chemistry, or Biology) for ₹99/mo, any two subjects for ₹179/mo, or all three subjects combo for just ₹249/mo.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What if I already attend offline/online coaching?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>The mentorship program is designed to integrate seamlessly with your existing coaching or self-study routine. Your personalised timetable and DPPs will be adjusted around your coaching hours to maximize your revision and practice.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How will my parents receive the weekly reports?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>For Gold and Diamond members, weekly reports detailing test scores, DPP completion rates, and consistency metrics are formatted and sent directly to parents via WhatsApp or email every weekend.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I enroll and get started?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Click on any "Enroll Now" button on the plan of your choice. You can complete your enrollment via UPI or send a direct message on WhatsApp with your details. Once verified, your personalized onboarding form and planner will be shared immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Banner -->
+  <section class="section cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-badge"><i data-lucide="zap" class="icon-xs"></i> Limited Slots for Daily Tracking</div>
+        <h2 class="cta-title">Ready to Stop Procrastinating and Secure Your Dream Rank?</h2>
+        <p class="cta-subtitle">Join Sarkar Erfan Uhana's Personalised Mentorship Program today and transform your daily consistency.</p>
+        <div class="cta-actions">
+          <a href="#plans" class="btn btn-primary btn-lg">
+            <span>View Plans & Enroll Now</span>
+            <i data-lucide="arrow-right" class="icon-sm"></i>
+          </a>
+          <a href="https://wa.me/919999999999?text=Hi%20Erfan%2C%20I%20want%20to%20know%20more%20about%20the%20Personalised%20Mentorship%20Program" target="_blank" rel="noopener" class="btn btn-outline btn-lg" id="directWhatsAppCta">
+            <i data-lucide="message-circle" class="icon-sm text-emerald"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <span class="brand-avatar">EE</span>
+          <div class="brand-text">
+            <span class="brand-title text-white">Euhana Explains</span>
+            <span class="brand-sub">Personalised Mentorship Program</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Empowering JEE, NEET & IAT aspirants through custom academic roadmaps, daily accountability, and direct guidance from Sarkar Erfan Uhana (IISER Kolkata).
+        </p>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#problem-solution">Accountability System</a></li>
+          <li><a href="#features">Features Included</a></li>
+          <li><a href="#plans">Silver, Gold & Diamond Plans</a></li>
+          <li><a href="#about">About Sarkar Erfan Uhana</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Contact & Inquiries</h4>
+        <p class="contact-info">
+          <i data-lucide="mail" class="icon-xs"></i>
+          <a href="mailto:sarkarerfanuhana@gmail.com">sarkarerfanuhana@gmail.com</a>
+        </p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/erfan_iiserk" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon-btn">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://youtube.com/@euhanaexplains" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon-btn">
+            <i data-lucide="youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Euhana Explains (Sarkar Erfan Uhana). All rights reserved.</p>
+      <p class="footer-credit">Built with high precision for JEE • NEET • IAT Aspirants.</p>
+    </div>
+  </footer>
+
+  <!-- Enrollment Modal -->
+  <div class="modal-backdrop" id="enrollmentModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModalBtn" onclick="closeEnrollmentModal()" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-badge" id="modalPlanBadge">Silver Plan</div>
+        <h3 class="modal-title" id="modalTitle">Complete Your Enrollment</h3>
+        <p class="modal-subtitle" id="modalSubtitle">You have selected the Silver Plan</p>
+      </div>
+
+      <div class="modal-body">
+        <!-- Order Summary Card -->
+        <div class="order-summary-card">
+          <div class="summary-row">
+            <span class="summary-label">Selected Plan:</span>
+            <span class="summary-value" id="summaryPlanName">Silver Plan</span>
+          </div>
+          <div class="summary-row" id="summarySubjectsRow">
+            <span class="summary-label">Subjects:</span>
+            <span class="summary-value" id="summarySubjectsList">Physics, Chemistry, Biology</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-row total-row">
+            <span class="summary-label">Total Payable:</span>
+            <span class="summary-total" id="summaryTotalAmount">₹249 / month</span>
+          </div>
+        </div>
+
+        <!-- Razorpay Instant Online Payment Button -->
+        <div class="razorpay-embed-wrapper" id="razorpayContainer">
+          <div class="payment-method-header">
+            <span class="instant-badge"><i data-lucide="zap" class="icon-xs"></i> Instant Online Payment (Physics Only)</span>
+            <span class="upi-icons-note">UPI (GPay / PhonePe / Paytm) • Cards • NetBanking</span>
+          </div>
+          <div class="razorpay-form-holder" id="razorpayFormHolder">
+            <form>
+              <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_TSUI8YBSclcQCq" async> </script>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-divider-or">
+          <span>OR CONTINUE VIA WHATSAPP / EMAIL</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="modal-actions">
+          <a href="#" id="modalWhatsAppBtn" target="_blank" rel="noopener" class="btn btn-emerald w-full">
+            <i data-lucide="message-circle" class="icon-sm"></i>
+            <span>Confirm & Chat on WhatsApp</span>
+          </a>
+          <a href="mailto:sarkarerfanuhana@gmail.com" id="modalEmailBtn" class="btn btn-secondary w-full">
+            <i data-lucide="mail" class="icon-sm"></i>
+            <span>Contact via Email</span>
+          </a>
+        </div>
+
+        <!-- How to Pay Instructions -->
+        <div class="payment-steps" style="margin-top: 1.25rem; margin-bottom: 0;">
+          <h4 class="payment-steps-title"><i data-lucide="shield-check" class="icon-xs text-emerald"></i> 100% Safe & Direct Verification</h4>
+          <ol class="steps-list">
+            <li>Complete payment securely via <strong>Razorpay</strong> or <strong>UPI</strong>.</li>
+            <li>Send your screenshot or confirmation on WhatsApp to get added to the tracker.</li>
+            <li>Receive your custom planner & diagnostic assessment within 24 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
