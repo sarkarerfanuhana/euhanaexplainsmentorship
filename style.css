@@ -1580,8 +1580,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.footer-disclaimer {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.45;
+  text-align: right;
 }
 
 /* --- Enrollment Modal --- */
@@ -1823,14 +1832,34 @@ a {
   letter-spacing: 0.05em;
 }
 
-/* --- Responsive Media Queries --- */
+/* Mobile Table Hint */
+.mobile-table-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #60a5fa;
+  background-color: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Comprehensive Mobile & Tablet Responsive Design
+   ========================================================================== */
+
+/* --- Tablet Devices (<= 1024px) --- */
 @media (max-width: 1024px) {
   .hero-trust-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .plans-grid {
     grid-template-columns: 1fr;
-    max-width: 600px;
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1843,6 +1872,8 @@ a {
   .mentors-grid {
     grid-template-columns: 1fr;
     gap: 1.75rem;
+    max-width: 680px;
+    margin: 0 auto;
   }
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -1852,38 +1883,365 @@ a {
   }
   .flow-arrow {
     transform: rotate(90deg);
+    margin: 0.4rem 0;
   }
 }
 
+/* --- Mobile Landscape & Standard Tablets (<= 768px) --- */
 @media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .section {
+    padding: 3.8rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+  }
+
+  /* Navigation Bar on Mobile */
   .nav-links, .nav-actions {
     display: none;
   }
+
   .mobile-nav-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
   }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.25rem 1.5rem 1.75rem 1.5rem;
+    background-color: rgba(15, 22, 38, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-medium);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    animation: slideDown 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .mobile-link {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-link:hover, .mobile-link:active {
+    color: #60a5fa;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 6.5rem 0 3rem 0;
+  }
+
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.15rem;
+    line-height: 1.22;
   }
+
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 1.8rem;
   }
+
   .hero-trust-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
   }
+
+  .trust-card {
+    padding: 0.9rem 0.75rem;
+    gap: 0.65rem;
+  }
+
+  .trust-icon-box {
+    width: 36px;
+    height: 36px;
+  }
+
+  .trust-number {
+    font-size: 0.95rem;
+  }
+
+  .trust-label {
+    font-size: 0.7rem;
+  }
+
+  /* Problem & Solution Flow */
   .poll-insights-grid {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
+
+  .insight-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .accountability-flow-box {
+    padding: 1.6rem 1.25rem;
+  }
+
+  .flow-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+
+  /* Features Grid */
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1.1rem;
   }
+
+  .feature-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Subject Chooser in Silver Plan */
+  .subject-selector-box {
+    padding: 1rem 0.85rem;
+  }
+
+  .subject-checkboxes {
+    gap: 0.4rem;
+  }
+
+  .subject-pill {
+    padding: 0.65rem 0.2rem;
+  }
+
+  .pill-title {
+    font-size: 0.74rem;
+  }
+
+  .pill-mentor-sub {
+    font-size: 0.62rem;
+  }
+
+  .pill-price {
+    font-size: 0.68rem;
+  }
+
+  /* Pricing Cards */
+  .plan-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .current-price {
+    font-size: 1.85rem;
+  }
+
+  /* Comparison Table on Mobile */
+  .comparison-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .mobile-table-hint {
+    display: flex;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 0.6rem;
+    font-size: 0.82rem;
+  }
+
+  /* Mentors Section */
+  .mentor-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .mentor-card-header {
+    gap: 1rem;
+  }
+
+  .mentor-card-header .about-avatar-wrapper {
+    width: 76px;
+    height: 76px;
+  }
+
+  .mentor-card-header .mentor-initials {
+    font-size: 1.5rem;
+  }
+
+  .mentor-name {
+    font-size: 1.2rem;
+  }
+
+  .mentor-role {
+    font-size: 0.78rem;
+  }
+
+  /* FAQ Accordion */
+  .faq-question {
+    padding: 1.1rem 1.2rem;
+    font-size: 0.96rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.2rem;
+  }
+
+  .faq-item.active .faq-answer {
+    padding-bottom: 1.1rem;
+  }
+
+  /* CTA Banner */
+  .cta-banner-card {
+    padding: 2.8rem 1.25rem;
+  }
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.6rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3.5rem 0 1.75rem 0;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .footer-bottom {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.6rem;
     text-align: center;
+  }
+
+  .footer-disclaimer {
+    text-align: center;
+  }
+
+  /* Enrollment Modal on Mobile */
+  .modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .modal-card {
+    padding: 1.6rem 1.15rem;
+    max-height: 88vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .order-summary-card {
+    padding: 1rem;
+  }
+
+  .razorpay-embed-wrapper {
+    padding: 1rem 0.75rem;
+  }
+}
+
+/* --- Compact Mobile Devices (<= 480px) --- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-badge {
+    flex-direction: row;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .badge-pill, .badge-text {
+    font-size: 0.75rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  .mentor-card-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mentor-meta {
+    align-items: center;
+  }
+
+  .mentor-social-tags-inline {
+    justify-content: center;
+  }
+
+  .achievement-item {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.78rem;
   }
 }
