@@ -137,7 +137,7 @@ function renderRazorpayButton(container, buttonId, label = 'Instant Online Payme
 }
 
 /**
- * 2. Enrollment Modal & Pre-filled WhatsApp Gateway
+ * 2. Enrollment Modal & Online Checkout
  */
 function openEnrollmentModal(planType) {
   state.currentModalPlan = planType;
@@ -149,13 +149,11 @@ function openEnrollmentModal(planType) {
   const summarySubjectsRow = document.getElementById('summarySubjectsRow');
   const summarySubjectsList = document.getElementById('summarySubjectsList');
   const summaryTotalAmount = document.getElementById('summaryTotalAmount');
-  const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
   const razorpayFormHolder = document.getElementById('razorpayFormHolder');
 
   let planName = 'Silver Plan';
   let totalAmount = '₹249 / month';
   let subjects = state.silverSubjects.join(', ');
-  let whatsappMsg = '';
   let activeRazorpayId = '';
   let activeLabel = 'Instant Online Payment';
 
@@ -184,8 +182,6 @@ function openEnrollmentModal(planType) {
     summarySubjectsRow.style.display = 'flex';
     summarySubjectsList.textContent = subjects;
     modalSubtitle.textContent = `Selected subjects: ${subjects}`;
-
-    whatsappMsg = `Hi Sarkar Erfan! 👋%0A%0AI want to enroll in the *Silver Mentorship Plan* for JEE/NEET/IAT.%0A• *Selected Subjects:* ${subjects}%0A• *Price:* ${totalAmount}%0A%0APlease share the payment details and my personalized study plan onboarding form.`;
   } else if (planType === 'Gold') {
     planName = 'Gold Plan (Bi-Weekly Meets + Parent Reports)';
     modalPlanBadge.textContent = 'Gold Plan';
@@ -199,8 +195,6 @@ function openEnrollmentModal(planType) {
     summarySubjectsRow.style.display = 'flex';
     summarySubjectsList.textContent = 'All Subjects (Physics + Chemistry + Biology)';
     modalSubtitle.textContent = 'Includes 2x Google Meets/week + Parent Reports';
-
-    whatsappMsg = `Hi Sarkar Erfan! 👋%0A%0AI want to enroll in the *Gold Mentorship Plan* (₹499/mo).%0A• *Includes:* All Subjects + 2x Google Meets/week + 1 Individual Call/week + Parent Reports.%0A%0APlease guide me with the payment and schedule setup.`;
   } else if (planType === 'Diamond') {
     planName = 'Diamond Plan (Daily 1-on-1 Call & Adaptive Strategy)';
     modalPlanBadge.textContent = 'Diamond Plan';
@@ -214,8 +208,6 @@ function openEnrollmentModal(planType) {
     summarySubjectsRow.style.display = 'flex';
     summarySubjectsList.textContent = 'Complete All-Subject 1-on-1 Mentorship';
     modalSubtitle.textContent = 'Includes Daily 1-on-1 Personal Calling & Daily Audits';
-
-    whatsappMsg = `Hi Sarkar Erfan! 👋%0A%0AI want to enroll in the *Diamond Mentorship Plan* (₹999/mo).%0A• *Includes:* Daily 1-on-1 Personal Calls + Daily Progress Audit + Dynamic Strategy Pivots.%0A%0APlease confirm slot availability and payment details.`;
   }
 
   summaryPlanName.textContent = planName;
@@ -223,11 +215,6 @@ function openEnrollmentModal(planType) {
 
   // Render Razorpay button dynamically
   renderRazorpayButton(razorpayFormHolder, activeRazorpayId, activeLabel);
-
-  // Set WhatsApp link
-  if (modalWhatsAppBtn) {
-    modalWhatsAppBtn.href = `https://api.whatsapp.com/send?text=${whatsappMsg}`;
-  }
 
   if (modal) {
     modal.classList.add('open');
